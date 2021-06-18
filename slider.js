@@ -37,12 +37,12 @@ imgArray.forEach(function(imgPath, imgIndex) {
     imgEl.src = imgPath;
     var infoEL = document.createElement("div");
     infoEL.classList.add('info');
-    infoEL.innerHTML = infoArray[imgIndex];
-    var infoElPosition = infoPosArray[imgIndex];
-    infoEL.style.width = infoElPosition.width;
-    infoEL.style.height = infoElPosition.height;
-    infoEL.style.top = infoElPosition.top;
-    infoEL.style.left = infoElPosition.left;
+    // infoEL.innerHTML = infoArray[imgIndex];
+    // var infoElPosition = infoPosArray[imgIndex];
+    // infoEL.style.width = infoElPosition.width;
+    // infoEL.style.height = infoElPosition.height;
+    // infoEL.style.top = infoElPosition.top;
+    // infoEL.style.left = infoElPosition.left;
 
 
     slideEl.appendChild(imgEl);
