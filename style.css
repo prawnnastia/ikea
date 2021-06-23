@@ -1,23 +1,22 @@
 .ikea-goods {
-    position: absolute;
     color:#393939;
     font-family: 'GT Eesti Pro Text', sans-serif;
     font-weight: normal;
     font-size: 300%;
     margin-top: 0%;
-    z-index: 2;
   }
 
 .location {    
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     color:#393939;
     font-family: 'GT Eesti Pro Text', sans-serif;
     font-weight: normal;
     font-size: 300%;
     margin-top: 0%;
-    margin-left: 50%;
-    z-index: 0;
     margin-bottom: 0;
+    transform: translate(-50%, -50%);
 }
 
 * {
@@ -25,11 +24,15 @@
 }
 
 .title{
-    margin: 5px;
     margin-top: 5px;
     padding-bottom: 5px;
     display: flex;
     margin-bottom: 0;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 
@@ -47,13 +50,14 @@ body {
     display: flex;
     margin-left: 0;
     margin-right: 0;
+    height: calc(100vh - 66px) ;
   }
   .embla__slide {
     position: relative;
     flex: 0 0 100%;
     margin-left: 0;
     margin-right: 0;
-    height: calc(100vh - 66px) ;
+    /* height: calc(100vh - 66px) ; */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -73,13 +77,12 @@ body {
     position: absolute;
     z-index: 1;
     top: 50%;
-    transform: translateY(-50%);
     border: 0;
     width: 30px;
     height: 30px;
     justify-content: center;
     align-items: center;
-    fill: #FFF501;
+    fill: #393939;
     padding: 0;
   }
   
@@ -94,11 +97,13 @@ body {
   }
   
   .embla__button--prev {
-    left: 8%;
+    left: 0;
+    transform: translateY(-100%, -50%);
   }
   
   .embla__button--next {
-    right: 8%;
+    right: 0;
+    transform: translateY(-100%, -50%);
   }
 
   .home-button {
@@ -109,28 +114,29 @@ body {
     width: 40px;
     height: 40px;
     margin-right: 5px;
-    position: fixed;
-    z-index: -1;
   } 
 
-.info {
-  /* width: 300px;
-  height: 300px;   
+.info { 
   position: absolute;
   top: 10vw;
   left: 50%;
-  transform: translate(-50%); */
+  transform: translate(-50%);
   
   border: 4px solid yellow; 
   color: transparent;
   transition: color 0.1s ease, background-color 0.1s ease;
+  font-family: 'GT Eesti Pro Text', sans-serif;
+  font-weight: normal;
+  font-size: 18 px;
   
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 25px;
+  text-align: center;
 }
 
 .info:hover {
   background-color: white;
-  color: black;
+  color:#393939;
 }
