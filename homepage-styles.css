@@ -50,3 +50,8 @@ a:link {
 a:hover {
 
 }
+
+.item {
+    width: 340px;
+    height: 100%;
+}
