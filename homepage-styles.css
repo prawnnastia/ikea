@@ -6,7 +6,8 @@
     font-size: 230px;
     line-height: 78%;
     margin-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    padding-top: 10px;
 }
 
 body {
@@ -54,4 +55,22 @@ a:hover {
 .item {
     width: 340px;
     height: 100%;
+}
+
+h3 {
+    color:#393939;
+    font-family: 'GT Eesti Pro Text', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: auto;
+    width: 660px;
+}
+
+.about {
+    margin: 15px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around
+    /* flex-wrap: wrap; */
 }
