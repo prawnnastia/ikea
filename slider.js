@@ -176,7 +176,7 @@ var locations = [
     'Sweden',
     'Älmhult, Sweden',
     '?',
-    'Finnland',
+    'Finland',
     'Sweden',
     'Utrecht, Netherlands',
     'Netherlands',
